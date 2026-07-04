@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>بهاء الدين | مصمم مواقع ويب</title>
+  <meta name="description" content="الموقع الشخصي لبهاء الدين، مصمم مواقع ويب من العراق يدرس الماجستير في الذكاء الاصطناعي في الهند." />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">بهاء الدين.</a>
+      <button class="hamburger" id="hamburger" aria-label="قائمة التنقل">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">الرئيسية</a></li>
+        <li><a href="#about">عني</a></li>
+        <li><a href="#services">خدماتي</a></li>
+        <li><a href="#portfolio">أعمالي</a></li>
+        <li><a href="#contact">تواصل معي</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="section">
+    <div class="container home-inner">
+      <div class="home-text fade-in">
+        <h4>مرحباً، أنا</h4>
+        <h1>بهاء <span>الدين</span></h1>
+        <h2 class="home-role">مصمم مواقع ويب</h2>
+        <p>مصمم مواقع ويب شغوف من العراق، أدرس حالياً الماجستير في الذكاء الاصطناعي في الهند.</p>
+        <div class="home-buttons">
+          <a href="#portfolio" class="btn">أعمالي</a>
+          <a href="#contact" class="btn btn-outline">تواصل معي</a>
+        </div>
+      </div>
+      <div class="home-image fade-in-delay">
+        <div class="img-wrapper">
+          <img src="profile.jpg" alt="بهاء الدين - مصمم مواقع ويب" />
+        </div>
+      </div>
+    </div>
+    <div class="hero-circle circle-1"></div>
+    <div class="hero-circle circle-2"></div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">من <span>أنا؟</span></h2>
+      <div class="divider"></div>
+      <div class="about-wrapper">
+
+        <div class="about-left slide-in-right">
+          <div class="about-photo-box">
+            <img src="profile.jpg" alt="بهاء الدين" />
+            <div class="photo-badge">
+              <i class="fa-solid fa-code"></i>
+              <span>مصمم ويب</span>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">سنوات خبرة</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">مشاريع منجزة</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">2</span>
+              <span class="stat-label">شهادات علمية</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right slide-in-left">
+          <div class="tab-buttons">
+            <button class="tab-btn active" onclick="switchTab('info')">
+              <i class="fa-solid fa-user"></i> معلوماتي
+            </button>
+            <button class="tab-btn" onclick="switchTab('skills')">
+              <i class="fa-solid fa-chart-bar"></i> مهاراتي
+            </button>
+            <button class="tab-btn" onclick="switchTab('edu')">
+              <i class="fa-solid fa-graduation-cap"></i> تعليمي
+            </button>
+          </div>
+
+          <div class="tab-content active" id="tab-info">
+            <p class="about-bio">أنا بهاء الدين، مصمم مواقع ويب شغوف من العراق. ارغب بتحويل الأفكار إلى تجارب رقمية ملفتة وقابلة للتطوير . أجمع بين الدراسة والعمل في مجال تصميم الويب والذكاء الاصطناعي.</p>
+            <div class="info-grid">
+              <div class="info-card">
+                <i class="fa-solid fa-user"></i>
+                <div>
+                  <span class="info-label">الاسم</span>
+                  <span class="info-value">بهاء الدين</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <i class="fa-solid fa-cake-candles"></i>
+                <div>
+                  <span class="info-label">تاريخ الميلاد</span>
+                  <span class="info-value">1997</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <i class="fa-solid fa-flag"></i>
+                <div>
+                  <span class="info-label">الجنسية</span>
+                  <span class="info-value">عراقي</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <span class="info-label">الموقع الحالي</span>
+                  <span class="info-value">كيرلا، الهند</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <span class="info-label">البريد الإلكتروني</span>
+                  <span class="info-value"><a href="mailto:bahaa6777@gmail.com">bahaa6777@gmail.com</a></span>
+                </div>
+              </div>
+              <div class="info-card">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div>
+                  <span class="info-label">واتساب</span>
+                  <span class="info-value"><a href="https://wa.me/9037198084">+91 9037 198 084</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab-skills">
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-name"><i class="fa-brands fa-html5"></i> HTML</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90" style="width:0"></div></div>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-row">
+                <div class="skill-name"><i class="fa-brands fa-css3-alt"></i> CSS / Tailwind</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="85" style="width:0"></div></div>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-row">
+                <div class="skill-name"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="75" style="width:0"></div></div>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-row">
+                <div class="skill-name"><i class="fa-brands fa-python"></i> Python</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="80" style="width:0"></div></div>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-row">
+                <div class="skill-name"><i class="fa-brands fa-react"></i> React</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="50" style="width:0"></div></div>
+                <span class="skill-pct">50%</span>
+              </div>
+              <div class="skill-row">
+                <div class="skill-name"><i class="fa-solid fa-puzzle-piece"></i> حل المشكلات</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="70" style="width:0"></div></div>
+                <span class="skill-pct">70%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab-edu">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <span class="timeline-year">2025 - حالياً</span>
+                  <h4>ماجستير الذكاء الاصطناعي</h4>
+                  <p>جامعة مهاتما غاندي - كيرلا، الهند</p>
+                  <span class="timeline-badge">منحة ICCR</span>
+                </div>
+              </div>
+                            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <span class="timeline-year">2020 - 2025</span>
+                  <h4>  تصميم وتنفيذ ديكورات داخلية</h4>
+                  <p>  الانبار - الرمادي  </p>
+                  <span class="timeline-badge">-</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-body">
+                  <span class="timeline-year">2016 - 2020</span>
+                  <h4>بكالوريوس علوم الحاسوب</h4>
+                  <p>جامعة المعارف - الرمادي، العراق</p>
+                  <span class="timeline-badge">متخرج</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">خدماتي</h2>
+      <p class="section-subtitle">ماذا أستطيع أن أقدم لك</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>تصميم المواقع</h3>
+          <p>تصميم واجهات مواقع حديثة وجميلة وسهلة الاستخدام تبدو رائعة على جميع الأجهزة.</p>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>تطوير الواجهات</h3>
+          <p>بناء مواقع متجاوبة باستخدام HTML وCSS وJavaScript وTailwind CSS بكود نظيف ومرتب.</p>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="fa-brands fa-react"></i></div>
+          <h3>تطوير React</h3>
+          <p>إنشاء تطبيقات ويب تفاعلية باستخدام React لتجربة مستخدم سلسة وديناميكية.</p>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h3>تصميم متجاوب</h3>
+          <p>ضمان عمل موقعك بشكل مثالي على الهواتف والأجهزة اللوحية وشاشات سطح المكتب.</p>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="fa-brands fa-python"></i></div>
+          <h3>برمجة Python</h3>
+          <p>كتابة سكريبتات Python للأتمتة ومعالجة البيانات والأدوات الصغيرة.</p>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>الذكاء الاصطناعي</h3>
+          <p>تطبيق مهارات الذكاء الاصطناعي وحل المشكلات المكتسبة من خلال الدراسة الأكاديمية.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2 class="section-title">أعمالي</h2>
+      <p class="section-subtitle"> مشاريعي الحديثة </p>
+
+      <div class="portfolio-grid">
+
+
+        <!-- مشروع 1 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrap">
+            <!-- غيّر المسر هنا لصورة مشروعك الأول -->
+            <img src="images/project1.png" alt="صفحة هبوط سماعة Aura الذكية" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="portfolio-overlay">
+              <!-- غيّر الرابط هنا -->
+              <a href="https://bahaa-97.github.io/Aura/" target="_blank" class="overlay-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-header">
+              <h3>صفحة هبوط سماعة Aura الذكية </h3>
+              <!-- غيّر الرابط هنا أيضاً -->
+              <a href="https://bahaa-97.github.io/Aura/" target="_blank" class="project-link-icon" title="رابط المشروع">
+                <i class="fa-solid fa-link"></i>
+              </a>
+            </div>
+            <p>صفحة هبوط سماعة Aura الذكية مع عرض الميزات والفوائد.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- مشروع 2 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrap">
+            <img src="images/project2.png" alt="صفحة هبوط أديداس ألترا بوست" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="portfolio-overlay">
+              <a href="https://bahaa-97.github.io/adidas/" target="_blank" class="overlay-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-header">
+              <h3> صفحة هبوط أديداس ألترا بوست</h3>
+              <a href="https://bahaa-97.github.io/adidas/" target="_blank" class="project-link-icon" title="رابط المشروع">
+                <i class="fa-solid fa-link"></i>
+              </a>
+            </div>
+            <p>صفحة هبوط أديداس ألترا بوست مع عرض الميزات والفوائد.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- مشروع 3 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrap">
+            <img src="images/project3.png" alt="صفحة هبوط منتج رقمي - نوفا
+ " onerror="this.parentElement.classList.add('no-img')" />
+            <div class="portfolio-overlay">
+              <a href="https://bahaa-97.github.io/nova/" target="_blank" class="overlay-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-header">
+              <h3>صفحة هبوط منتج رقمي - نوفا
+</h3>
+              <a href="https://bahaa-97.github.io/nova/" target="_blank" class="project-link-icon" title="رابط المشروع">
+                <i class="fa-solid fa-link"></i>
+              </a>
+            </div>
+            <p>صفحة هبوط منتج رقمي - نوفا
+ مع عرض الميزات والفوائد.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- مشروع 4 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrap">
+            <img src="images/project4.png" alt="النظام الصحي الذكي" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="portfolio-overlay">
+              <a href="https://bahaa-97.github.io/BMI_Calculator/" target="_blank" class="overlay-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-header">
+              <h3> النظام الصحي الذكي</h3>
+              <a href="https://bahaa-97.github.io/BMI_Calculator/" target="_blank" class="project-link-icon" title="رابط المشروع">
+                <i class="fa-solid fa-link"></i>
+              </a>
+            </div>
+            <p>نظام صحي ذكي لحساب مؤشر كتلة الجسم (BMI) وتقديم نصائح للحفاظ على الصحة.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- مشروع 5 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrap">
+            <img src="images/project5.png" alt=" موقع ديكورات داخلية" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="portfolio-overlay">
+              <a href="https://bahaa-97.github.io/decorat/" target="_blank" class="overlay-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-header">
+              <h3> موقع ديكورات داخلية</h3>
+              <a href="https://bahaa-97.github.io/decorat/" target="_blank" class="project-link-icon" title="رابط المشروع">
+                <i class="fa-solid fa-link"></i>
+              </a>
+            </div>
+            <p>موقع إلكتروني لعرض ديكورات داخلية متنوعة وحديثة.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- مشروع 6 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img-wrap">
+            <img src="images/project6.png" alt="نوفا | تسجيل الدخول" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="portfolio-overlay">
+              <a href="https://bahaa-97.github.io/nova_login/" target="_blank" class="overlay-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-header">
+              <h3>نوفا | تسجيل الدخول</h3>
+              <a href="https://bahaa-97.github.io/nova_login/" target="_blank" class="project-link-icon" title="رابط المشروع">
+                <i class="fa-solid fa-link"></i>
+              </a>
+            </div>
+            <p>واجهة تسجيل دخول لتطبيق نوفا بتصميم متجاوب.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- نهاية portfolio-grid -->
+    </div><!-- نهاية container -->
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">تواصل <span>معي</span></h2>
+      <p class="section-subtitle">لا تتردد في التواصل - يسعدني سماع منك</p>
+      <div class="contact-inner">
+        <div class="contact-info slide-in-right">
+          <h3>معلومات التواصل</h3>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p><a href="mailto:bahaa6777@gmail.com">bahaa6777@gmail.com</a></p>
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <p><a href="https://wa.me/9037198084" target="_blank">+91 9037 198 084</a></p>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>كوتايم، كيرلا، الهند</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <p>ماجستير ذكاء اصطناعي - جامعة مهاتما غاندي، الهند</p>
+          </div>
+        </div>
+        <div class="contact-form slide-in-left">
+          <input type="text" id="form-name" placeholder="اسمك" />
+          <input type="email" id="form-email" placeholder="بريدك الإلكتروني" />
+          <input type="text" id="form-subject" placeholder="الموضوع" />
+          <textarea id="form-message" placeholder="رسالتك"></textarea>
+          <button class="btn" id="send-btn" onclick="sendMessage()">إرسال الرسالة</button>
+          <p id="form-status"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&#169; 2025 <span>بهاء الدين</span>. جميع الحقوق محفوظة. صُمم بـ &#10084; من بهاء الدين.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
